@@ -11,6 +11,8 @@ class Integer final {
     std::vector<int8_t> numbers_;
     bool is_positive_;
     const int base = 10;
+    const int shift = 2;
+    const int order = 1;
   public:
     Integer();
     Integer(const Integer&);

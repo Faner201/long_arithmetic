@@ -148,7 +148,7 @@ Integer::operator T() const {
         return std::numeric_limits<T>::min();
     }
     for (int i = 0; i < this->numbers_.size(); ++i) {
-        number += this->numbers_[i] * std::pow(10, i);
+        number += this->numbers_[i] * std::pow(base, i);
     }
     return number;
 }

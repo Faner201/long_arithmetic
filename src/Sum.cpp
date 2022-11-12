@@ -15,7 +15,7 @@ Integer Integer::SumModules(const Integer& other) const {
     sum.numbers_[i] %= base;
   }
   if (discharge) {
-    sum.numbers_.push_back(1);
+    sum.numbers_.push_back(discharge);
   }
   return sum;
 }
